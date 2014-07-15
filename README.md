@@ -22,9 +22,8 @@ The purpose of this project is to program a multi-color LED, which changes color
 
 This multi-color light color changes when passing different voltages. Each of the three LEDs share a common cathode (negative) and there are three separate positives. 
 
-![Diagram](diagram.png)
 
-1. Set up hardware.
+1. Set up hardware. Make sure the groud pin of the LED is connected to ground on the Arduino.
 2. Read through the declared variables, and locate digital pins 9, 10 and 11, and analog pin 0 on the Arduino.
 3. The `setup()` method will begin the serial communication between the Arduino, and the computer. In the void setup() method,  assign the OUTPUT(s) and INPUT(s) using pinMode, for the red, green, blue and photo-resistor pins.
 4. The `loop()` method is the part of the code that will repeat continuously. In the void `loop()` method, set the time delay in milliseconds. NOTICE that the timing always operates in milliseconds, and not seconds. 
