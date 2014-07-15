@@ -10,9 +10,9 @@
 // constants won't change. Used here to 
 // set pin numbers:
 const int pin1 =  13;      // pins should go to sequential LEDs
-const int pin2 =  12;  //THE DIAGRAM DOES NOT HAVE 13 SO SHIFT THESE
-const int pin3 =  11;
-const int pin4 =  10;      
+
+//Declare the other pins here
+
 const int pin5 =  9; 
 const int pin6 =  8;
 const int pin7 = 7;
@@ -25,9 +25,9 @@ void setup() {
   // set the digital pin as output:
   pinMode(pin1, OUTPUT);      
   pinMode(pin2, OUTPUT);   
-  pinMode(pin3, OUTPUT);
-  pinMode(pin4, OUTPUT);      
-  pinMode(pin5, OUTPUT);   
+
+  //Set the other output pins
+
   pinMode(pin6, OUTPUT);
   pinMode(pin7, OUTPUT);
   randomSeed(analogRead(7));
@@ -58,32 +58,11 @@ void loop() {
          Serial.print("case 2");
          break;
       case 3:
-         digitalWrite(pin1, HIGH);
-         digitalWrite(pin2, HIGH);
-         digitalWrite(pin3, HIGH);
-         digitalWrite(pin4, LOW);
-         digitalWrite(pin5, LOW);
-         digitalWrite(pin6, LOW);
-         Serial.print("case 3");
-         break;
+		 //Follow the pattern
       case 4:
-         digitalWrite(pin1, HIGH);
-         digitalWrite(pin2, HIGH);
-         digitalWrite(pin3, HIGH);
-         digitalWrite(pin4, HIGH);
-         digitalWrite(pin5, LOW);
-         digitalWrite(pin6, LOW);
-         Serial.print("case 4");
-         break;
+
       case 5:
-         digitalWrite(pin1, HIGH);
-         digitalWrite(pin2, HIGH);
-         digitalWrite(pin3, HIGH);
-         digitalWrite(pin4, HIGH);
-         digitalWrite(pin5, HIGH);
-         digitalWrite(pin6, LOW);
-         Serial.print("case 5");
-         break;
+		 //Keep following
       case 6:
          digitalWrite(pin1, HIGH);
          digitalWrite(pin2, HIGH);
@@ -94,4 +73,6 @@ void loop() {
          Serial.print("case 6");
          break;
   }
+
+	//Congratulations! It should work the FIRST time
 }

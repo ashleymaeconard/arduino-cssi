@@ -5,9 +5,9 @@
 
                                                
 int lightValueResistor = 0;                            //Pin declarations
-int redPin = 11;             
-int greenPin = 10;           
-int bluePin = 9;    
+int redPin = 13;             
+int greenPin = 12;           
+int bluePin = 11;    
 int red, green, blue, v = 0;
 
 void setup()

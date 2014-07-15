@@ -1,8 +1,8 @@
 // NOTE: Pin declarations (global variables)
 int lightValueResistor = 0;                            
-int redPin = 8;             
-int greenPin = 9;           
-int bluePin = 10;    
+int redPin = 13;             
+int greenPin = 12;           
+int bluePin = 11;    
 int red, green, blue, v = 0;
          
 
