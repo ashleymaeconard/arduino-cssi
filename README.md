@@ -42,11 +42,21 @@ Prerequisite: Stop Light
 5. Determine what voltage would make a good limit to turn music on
 	* Does this match the ceiling set in the code?
 
-Chat Protocol FIXME
+Chat Protocol
 ----------------
-Placeholder
+Hardware:
+1. Connect the ground pins of both arduinos together with a wire.
+2. Connect the A4 pins and the A5 pins, respectively, on both arduinos.
 
-    
+For the Master Writer:
+1. In the "Master Writer" file, in the setup, figure out the command to join the I2C bus (look at Arduino library).
+2. Figure out how to write "N" bytes to the I2C bus. Do this in the "Master Writer" loop.
+3. Figure out how to complete the transmission in the "Master Writer" loop.
+4. Set a reasonable delay at the end of the "Master Writer" loop.
 
-
-
+For the Slave Receiver:
+1. Join the I2C bus as device 4 in the setup.
+2. Register the receive event in the setup.
+3. In the "Slave Receiver" loop, set a reasonable delay.
+4. In the receive event function, set the "while loop" parameters. Hint: you might have seen this before.
+5. In the while loop in the receive event function, read a byte from the I2C bus.
