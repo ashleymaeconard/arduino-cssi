@@ -18,7 +18,7 @@ char b;
 void setup()
 {
   Serial.begin(9600);
-  //CODE: How do we join the I2C bus
+  //CODE: How do we join the I2C bus (look at Arduino library)
 }
 
 
@@ -26,7 +26,9 @@ void loop()
 {
   int total = 0;
   if(Serial.available() > 0) { //check to see if data is available from the console
+	
 	//CODE: begin tramsmission with device 4
+    
     while(Serial.available() > 0 && total < 250) { //write to buffer until full no more data available
       input[total] = Serial.read();
 
