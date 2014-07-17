@@ -32,15 +32,17 @@ This multi-color light color changes when passing different voltages. Each of th
 
 Party Lights
 -----
-Prerequisite: Stop Light
+Prerequisite: Dice
 
-1. Hook 3.5mm audio cable to breadboard
-2. Play music through 8 ohm speakers by touching the wires together.
-	* Does polarity matter?
-3.  Set this up on the breadboard
-4.  Hook a sense line from A0 on the Arduino to the speaker setup.
-5. Determine what voltage would make a good limit to turn music on
-	* Does this match the ceiling set in the code?
+1. Connect the two wires from the 3.5mm audio jack to two buses on the breadboard. 
+2. Place three LEDS sequentially into the breadboard (with two dots spacing in between each LED).
+3. Connect the negative leads of the LEDs to the ground bus with 270 Ohm resistors. (Place a resistor below each LED on the bread board.) 
+   Be careful with polarity. (Bonus question: How does polarity matter?)
+4. Connect the positive terminals of the LEDs to pins 11-13 with wire.
+5. Connect the ground pin of the Arduino to the ground bus of the breadboard.
+6. Connect one of the two buses that the speaker is attached to to pin A0 of the arduino.
+7. Determine what voltage would make a good limit to turn music on. (Does this match the ceiling set in the code?)
+8. Play music through 8 ohm speakers by touching the wires together.
 
 Chat Protocol
 ----------------
