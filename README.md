@@ -2,19 +2,24 @@ Google CSSI Arduino Workshop 2014
 ============================
 Tutorials and code for the four workshop project options.
 
-Die FIXME
+Die
 -----------
-The purpose of this project is to simulate a traffic light by programming times LED lights
+The purpose of this project is to simulate a six sided die by programming six different LED lights
 
-1.  Set up your hardware.
-2.  We must set our color LED lights to a specific pin in the Arduino.  The red light will be set to pin 10, the blue light (which we will pretend is yellow) is set to pin 11, and so on. We will also set time in between each consecutive light blink.
-3.  Next we will set up the main body of our loop, the part of the code which the Arduino will continuously execute.  In our program we have 4 different states:
-    * Case #1: Just the yellow pin is on
-    * Case #2: Just the green pin is on
-    * Case #3: Just the red pin is on
-    * Default case: None of the pins are on
-4.  The command for turning a light on is: `digitalWrite(yellowPin, HIGH)`,and the command for turning it off is: `digitalWrite(yellowPin, LOW)`. Remember that you will have to turn off each light after it is turned on!
-5.  Make the program loop through the 4 cases over and over my using modular (clock) arithmetic.
+1.  Set up your hardware
+2.  Connect ground wire to blue bus
+3.  Connect pins 8-13 to the positive ends of the LEDs 
+4.  Use 270 ohm resistors to connect the negative ends to ground
+5.  We must set our LED lights to specific pins in the Arduino. One LED will be set to pin 8, one LED is set to pin 9,	and so on.
+6.  Next we will set up the main body of die.
+    * Case #1: Just the first pin is on
+    * Case #2: Just the first two pins are on
+    * Case #3: Just the first three pins are on
+    * Case #4: The first four pins are on
+    * Case #5: The first five pins are on
+    * Case #6: All the pins are on
+7.  The command for turning a light on is: `digitalWrite(pin1, HIGH)`,and the command for turning it off is: `digitalWrite(pin2, LOW)`.
+8.  Press the reset button every time you wish to reroll the dice.
 
 Distance Detection
 ------------------
