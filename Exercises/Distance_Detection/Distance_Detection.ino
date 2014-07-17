@@ -12,7 +12,7 @@ void setup()
     // NOTE: Begin serial communication
     Serial.begin(9600);
     
-    // NOTE: Set pins to OUTPUT mode
+    // NOTE: Set pins to INPUT or OUTPUT mode
     pinMode(redPin, );      
     pinMode(greenPin, );
     pinMode(bluePin, );
@@ -38,6 +38,10 @@ void setColor(int lightValue)
 
   // NOTE: Switch statement to make the LED alternate between colors (using RGB values) 
   // according to the light value of the photoresistor
+  
+  // ANOTHER NOTE! : The light values will vary between 0 and around 800 (though it can go higher)
+  //                 Pick some appropriate intervals and set LED to a different color for each
+  //                 interval.
 
   // DO: If the light value is greater than 700, set the LED to RED
   if(lightValue >= 700){         
@@ -47,22 +51,22 @@ void setColor(int lightValue)
 
   }
 
-  // DO: Else if the light value is between 600 and 700, set the LED to YELLOW
-  else if(lightValue < 700 && lightValue >= 600){
+  // DO: Else if the light value is between ___ and ___, set the LED to ___
+  else if(lightValue <  && lightValue >= ){
 
   }
 
-  // DO: Else if the light value is between 500 and 600, set the LED to GREEN
+  // DO: Else if the light value is between ___ and ___, set the LED to ___
   else if(lightValue < && lightValue >=){ 
 
   }
 
-  // DO: Else if the light value is between 400 and 500, set the LED to TURQUOISE (set blue and green to high)
+  // DO: Else if the light value is between ___ and ___, set the LED to ___ (set blue and green to high)
   else if(){
 
   }
 
-  // DO: Else if the light value is between 300 and 400, set the LED to BLUE
+  // DO: Else if the light value is between ___ and ___, set the LED to BLUE
 
   // DO: Else if the light value is less than 300, set the LED to PURPLE
   
