@@ -15,7 +15,7 @@ receives string from the master and outputs it to the console.
 void setup()
 {
   //CODE: Join the bus as device 4
-  //CODE: Register the receive event
+  //CODE: Register the receive event 
   Serial.begin(9600);           // start serial for output
   //CODE: Print a nice message to the serial port telling the user what the application does
 }
@@ -29,7 +29,7 @@ void loop()
 // this function is registered as an event, see setup()
 void receiveEvent(int howMany)
 {
-  while(0 < Wire.available()) // loop through all but the last
+  while(   ) // //while we still have characters to read, loop through all but the last
   {
     //CODE: Read a byte from the I2C bus
     Serial.print(c);         // print the character
