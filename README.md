@@ -1,4 +1,4 @@
-Google CSSI Arduino Workshop 2014
+Google CSSI Arduino Workshop 2014 and 2015
 ============================
 Tutorials and code for the four workshop project options.
 
